@@ -1,3 +1,4 @@
 # CS-CitySiege
 一个面向机房摸鱼与局域网联机的本地战棋游戏
 原名GirdWar 后改名
+平衡性可能不是很好，可以在constants和gameState两个文件里修改一些常量和初始游戏状态
