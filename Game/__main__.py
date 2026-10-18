@@ -1,4 +1,4 @@
-"""python -m battle_game 的入口。"""
+"""游戏入口"""
 
 from __future__ import annotations
 
