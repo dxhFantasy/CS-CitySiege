@@ -41,6 +41,15 @@ class GameState:
             City(7, 8, Faction.NEUTRAL),
             City(12, 8, Faction.BLUE),
         ]
+        cnt : int = 0
+        while 1:
+            x = random.randint(2,13)
+            y = random.randint(2,13)
+            if self.CitySpacingOk(x,y):
+                self.cities.append(City(x,y,Faction.NEUTRAL))
+                cnt+=1
+            if cnt >= 2:
+                break
 
     def SetupInitialTerritory(self) -> None:
         """初始只有主城周围一小片领土，其余全部是中立地块。"""
